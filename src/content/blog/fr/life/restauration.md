@@ -16,7 +16,7 @@ Oui oui vous ne rêvez pas!
 
 ## Que s'est-il passé ?
 
-Très simple j'ai voulu préparer une surprise, et la cache des serveur de GitHub pages en a décidé autrement...
+Très simple j'ai voulu préparer une surprise, et le cache des serveur de GitHub pages en a décidé autrement...
 
 ### C'est à dire ?
 
