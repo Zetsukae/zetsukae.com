@@ -14,7 +14,7 @@ La Réstauration du site!
 
 Oui oui vous ne rêvez pas!
 
-## Que s'est-il passé
+## Que s'est-il passé ?
 
 Très simple j'ai voulu préparer une surprise, et la cache des serveur de GitHub pages en a décidé autrement...
 
