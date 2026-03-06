@@ -1,0 +1,105 @@
+# =============================================================================
+# i18n Content Translations
+# =============================================================================
+# Non-default locale translations for content-level strings.
+# Default locale (zh) values come from config/site.yaml — only add overrides here.
+#
+# Structure:
+#   <locale>:
+#     categories:    { <slug>: <translated name> }
+#     series:        { <slug>: { label?, fullName?, description? } }
+#     featuredCategories: { <link>: { label?, description? } }
+# =============================================================================
+
+en:
+  categories:
+    life: Announcements
+    note: Notes
+    tools: Tools
+    front-end: Games
+
+  featuredCategories:
+    life:
+      label: Announcements
+      description: All useful announcements!
+    note:
+      label: Notes
+      description: Technical and learning notes
+    note/front-end:
+      label: My Games
+      description: Here you will find all the games I created
+    tools:
+      label: Tools
+      description: Tool usage and productivity improvement
+
+  friends:
+    applyDesc: "Please leave a comment on this page, format as follows"
+
+zh:
+  categories:
+    life: 公告
+    note: 笔记
+    tools: 工具
+    front-end: 游戏
+
+  featuredCategories:
+    life:
+      label: 公告
+      description: 所有有用的公告！
+    note:
+      label: 笔记
+      description: 技术和学习笔记
+    note/front-end:
+      label: 我的游戏
+      description: 在这里您可以找到我创建的所有游戏
+    tools:
+      label: 工具
+      description: 工具使用和生产力改进
+
+ja:
+  categories:
+    life: お知らせ
+    note: ノート
+    tools: ツール
+    front-end: ゲーム
+
+  featuredCategories:
+    life:
+      label: お知らせ
+      description: すべての有用なお知らせ！
+    note:
+      label: ノート
+      description: 技術と学習ノート
+    note/front-end:
+      label: 私のゲーム
+      description: ここには私が作成したすべてのゲームがあります
+    tools:
+      label: ツール
+      description: ツール使用と生産性向上
+
+  friends:
+    applyDesc: "このページにコメントを残してください。以下の形式で"
+
+fr:
+  categories:
+    life: Annonces
+    note: Notes
+    tools: Outils
+    front-end: Jeux
+
+  featuredCategories:
+    life:
+      label: Annonces
+      description: Toutes les annonces utiles!
+    note:
+      label: Notes
+      description: Notes techniques et d'apprentissage
+    note/front-end:
+      label: Mes-Jeux
+      description: Ici vous trouverez tous les jeux que j'ai créé
+    tools:
+      label: Outils
+      description: Utilisation d'outils et amélioration de la productivité
+
+  friends:
+    applyDesc: "Veuillez laisser un commentaire sur cette page, format ci-dessous"
