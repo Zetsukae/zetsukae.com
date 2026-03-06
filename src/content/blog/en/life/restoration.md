@@ -14,7 +14,7 @@ Site Restoration!
 
 Yes, yes, you’re not dreaming!
 
-## What happened ?
+## What happened?
 
 Very simple: I wanted to prepare a surprise, and the GitHub Pages server cache decided otherwise...
 
