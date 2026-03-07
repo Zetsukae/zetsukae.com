@@ -30,4 +30,4 @@ D'où la page "maintenance" qui est resté un bon moment...
 
 ## Et maintenant ?
 
-Comme vous pouvez le voir le site est de retour, tout es stable. Si un jour vous voyez encore une fois la page "maintenance" ne paniquez pas! :)
+Comme vous pouvez le voir le site est de retour, tout est stable. Si un jour vous voyez encore une fois la page "maintenance" ne paniquez pas! :)
