@@ -47,6 +47,7 @@ i18n:
       label: Français
     - code: zh
       label: 中文
+      enabled: false
     - code: en
       label: English
       # enabled: false  # 内容存在但暂时禁用（保留内容但不生成路由）
