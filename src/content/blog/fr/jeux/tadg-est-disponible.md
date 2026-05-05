@@ -1,5 +1,5 @@
 ---
-title: 'The Amazing Digital Game' est disponible!
+title: "The Amazing Digital Game est disponible !"
 link: tadg-est-disponible
 catalog: true
 date: 2026-05-04 20:00:00
