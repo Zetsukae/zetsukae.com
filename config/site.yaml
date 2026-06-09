@@ -13,7 +13,7 @@
 site:
   title: Blog de Zetsukae # 网站名称
   alternate: zetsukae # 网站英文名称 用于页脚、Logo、@ handle 等
-  subtitle: Made it by Yourself. # 网站副标题
+  subtitle: Made it by Yourself. You can. Despite everything. # 网站副标题
   name: Zetsukae # 作者名称 - 请修改为你的名字
   description: Un thème de blog moderne basé sur Astro # 网站描述
   avatar: /img/avatar.webp # 网站头像
