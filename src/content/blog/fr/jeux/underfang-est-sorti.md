@@ -10,7 +10,7 @@ categories:
   - Jeux
 ---
 
-🎮 **Underfang est enfin disponible!**
+**[ITCH.io]Underfang est enfin disponible!**
 
 Je suis ravi d'annoncer la sortie officielle de **Underfang**, mon jeu vidéo! C'est le fruit de plusieurs mois de travail acharné et je suis excité de le partager avec vous.
 
@@ -20,11 +20,11 @@ Underfang est un jeu d'horreur psychologique qui vous plonge dans une expérienc
 
 ## Où jouer?
 
-### 🎮 Télécharger
+### Télécharger
 Téléchargez Underfang sur **itch.io**:
 👉 **[Télécharger sur itch.io](https://zetsukae.itch.io/underfang)**
 
-### 🌐 Jouer en ligne (DÉMO)
+### Jouer en ligne (DÉMO) (Va être remplacer pour être la Démo sur Steam :))
 Jouez à la démo directement dans votre navigateur:
 👉 **[Jouer la démo sur uniware.site](https://uniware.site)**
 
