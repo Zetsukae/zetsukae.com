@@ -72,7 +72,7 @@ export const uiStrings: UIStrings = {
 
   // ── Category Names ─────────────────────────────────────────
   'categories.annonces': 'Announcements',
-  'categories.notes': 'Notes',
+  'categories.notes': 'Tutorials',
   'categories.outils': 'Tools',
   'categories.jeux': 'Games',
 

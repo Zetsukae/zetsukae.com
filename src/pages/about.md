@@ -1,31 +1,31 @@
 ---
 layout: ../layouts/PageLayout.astro
-title: "À propos"
-coverTitle: "À propos de moi"
+title: "About"
+coverTitle: "About me"
 date: 2026-03-05 09:00:00
-description: "En savoir plus sur Zetsukae et ce blog"
+description: "Learn more about Zetsukae and this blog"
 ---
 
-## Bienvenue sur mon blog! 👋
+## Welcome to my blog! ;]
 
-Je suis **Zetsukae**, et ce blog est un espace où je partage mes réflexions, mes projets et mes découvertes.
+I’m **Zetsukae**, and this blog is a place where I share my thoughts, projects, and tutorials.
 
-### À propos de ce site
+### About this site
 
-Ce site est construit avec **Astro** et utilise le thème **Koharu**. J'ai choisi cette combinaison pour sa performance exceptionnelle, son design moderne et sa flexibilité.
+This site is built with **Astro** and uses the **Koharu** theme. I chose this combination for its exceptional performance, modern design, and flexibility.
 
-Le site est completement en français par défaut, avec support multilingue pour l'anglais, chinois et japonais.
+The site is fully in English by default and optimized for a single-language experience.
 
-### La philosophie derrière ce blog
+### The philosophy behind this blog
 
-> L'impossible ne veut pas dire qu'on ne peut pas le casser pour y parvenir.
+> Made it by Yourself. You can. Despite everything.
 
-Je crois en l'apprentissage continu, l'innovation et le partage de connaissances. Ce blog est mon journal de bord dans ce voyage.
+I believe in continuous learning, innovation, and sharing knowledge. This blog is my working journal along this journey.
 
-### Me trouver
+### Find me
 
-Pour en savoir plus sur mon travail et mes projets, consultez les catégories du blog ou explorez les différentes sections disponibles.
+To learn more about my work and projects, explore the blog categories or browse the available sections.
 
 ---
 
-**Merci de votre visite!** N'hésitez pas à revenir régulièrement pour découvrir du nouveau contenu. ✨
+**Thank you for visiting!** Feel free to come back regularly to discover new content. ✨

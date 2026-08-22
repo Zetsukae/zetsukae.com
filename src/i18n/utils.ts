@@ -7,7 +7,7 @@
 
 import { defaultLocale, isLocaleSupported } from './config';
 import { translations } from './translations';
-import { uiStrings as defaultStrings } from './translations/zh';
+import { uiStrings as defaultStrings } from './translations/en';
 import type { Locale, TranslationKey, TranslationParams } from './types';
 
 /** Replace `{param}` placeholders in a string with provided values. */
@@ -81,10 +81,9 @@ function tryTranslate(locale: Locale, key: string, params?: TranslationParams): 
  * @example
  * ```ts
  * getLocaleFromUrl('/en/post/hello')  // => 'en'
- * getLocaleFromUrl('/post/hello')     // => 'zh' (default)
+ * getLocaleFromUrl('/post/hello')     // => 'en' (default)
  * getLocaleFromUrl('/en/')            // => 'en'
- * getLocaleFromUrl('/')               // => 'zh' (default)
- * getLocaleFromUrl('/zh/post/hello')  // => 'zh' (default — prefix ignored)
+ * getLocaleFromUrl('/')               // => 'en' (default)
  * ```
  */
 export function getLocaleFromUrl(pathname: string): Locale {
@@ -106,9 +105,8 @@ export function getLocaleFromUrl(pathname: string): Locale {
  *
  * @example
  * ```ts
- * localizedPath('/post/hello', 'zh')  // => '/post/hello'
- * localizedPath('/post/hello', 'en')  // => '/en/post/hello'
- * localizedPath('/', 'en')            // => '/en'
+ * localizedPath('/post/hello', 'en')  // => '/post/hello'
+ * localizedPath('/', 'en')            // => '/'
  * ```
  */
 export function localizedPath(path: string, locale: Locale = defaultLocale): string {
@@ -167,13 +165,11 @@ export function getAlternateUrl(currentPathname: string, targetLocale: Locale): 
  *
  * @example
  * ```ts
- * getHtmlLang('zh')  // => 'zh-CN'
  * getHtmlLang('en')  // => 'en'
- * getHtmlLang('ja')  // => 'ja'
  * ```
  */
 const HTML_LANG_MAP: Record<string, string> = {
-  zh: 'zh-CN',
+  en: 'en',
 };
 
 export function getHtmlLang(locale: Locale): string {
@@ -188,8 +184,8 @@ export function getHtmlLang(locale: Locale): string {
  *
  * @example
  * ```ts
- * resolveNavName('nav.home', '首页', 'en')  // => 'Home'
- * resolveNavName(undefined, '首页', 'en')   // => '首页'
+ * resolveNavName('nav.home', 'Home', 'en')  // => 'Home'
+ * resolveNavName(undefined, 'Home', 'en')  // => 'Home'
  * ```
  */
 export function resolveNavName(nameKey: string | undefined, fallbackName: string | undefined, locale: Locale): string {

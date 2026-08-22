@@ -5,31 +5,16 @@ import { defaultLocale } from '@/i18n';
 
 // RSS XSL feed translations
 const feedTexts = {
-  fr: {
-    visitWebsite: 'Visitez le site',
-    recentUpdates: 'Mises à jour récentes',
-    readMore: 'Lire la suite',
-  },
   en: {
     visitWebsite: 'Visit Website',
     recentUpdates: 'Recent Updates',
     readMore: 'Read More',
   },
-  zh: {
-    visitWebsite: '访问网站',
-    recentUpdates: '最近更新',
-    readMore: '阅读全文',
-  },
-  ja: {
-    visitWebsite: 'ウェブサイトを訪問',
-    recentUpdates: '最近の更新',
-    readMore: '続きを読む',
-  },
 } as const;
 
-// Get translations for current locale, fallback to French
-const currentLocale = (defaultLocale as keyof typeof feedTexts) || 'fr';
-const texts = feedTexts[currentLocale] || feedTexts.fr;
+// Get translations for current locale, fallback to English
+const currentLocale = (defaultLocale as keyof typeof feedTexts) || 'en';
+const texts = feedTexts[currentLocale] || feedTexts.en;
 
 // Convert icon format: ri:github-fill -> ri-github-fill (Remix Icon CDN uses dash)
 const toRemixIconClass = (icon: string) => icon.replace(':', '-');
@@ -50,7 +35,7 @@ export async function GET(_context: APIContext) {
     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
     <xsl:output method="html" version="1.0" encoding="UTF-8" indent="yes" />
     <xsl:template match="/">
-        <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+        <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
             <head>
                 <title><xsl:value-of select="/rss/channel/title" /> - RSS Feed</title>
                 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

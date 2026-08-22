@@ -10,7 +10,7 @@ categories:
   - Announcements
 ---
 
-Welcome to my site! 🎉
+Welcome to my site!
 
 This is my first post on this new blog. I decided to create this space to share my thoughts, projects, and discoveries.
 
@@ -26,11 +26,11 @@ Astro is an innovative web framework that makes it easy to build fast websites w
 
 Koharu provides an excellent structure for a personal blog with:
 
-- Multilingual support (French, English, Chinese, Japanese)
+- Multilingual support (French, English, Chinese, Japanese) > (which I deactivated for now.)
 - Modern and responsive design
 - Excellent support for technical content
 - Optimized performance
 
-## Thank You for Visiting! 👋
+## Thank You for Visiting! :>
 
 Thanks for stopping by! Feel free to explore the site and come back soon for more content!

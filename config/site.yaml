@@ -11,24 +11,24 @@
 # Site Basic Information
 # =============================================================================
 site:
-  title: Blog de Zetsukae # 网站名称
-  alternate: zetsukae # 网站英文名称 用于页脚、Logo、@ handle 等
-  subtitle: Made it by Yourself. You can. Despite everything. # 网站副标题
-  name: Zetsukae # 作者名称 - 请修改为你的名字
-  description: Un thème de blog moderne basé sur Astro # 网站描述
-  avatar: /img/avatar.webp # 网站头像
-  showLogo: true # 是否显示 Logo
-  author: Zetsukae # 作者名称 - 请修改为你的名字
-  url: https://zetsukae.com # 站点 URL 用于 RSS 和 SEO
-  defaultOgImage: /img/avatar.webp # 默认 Open Graph 图片
-  startYear: 2020 # 建站年份
-  timezone: Europe/Zurich # 时区配置 (IANA 格式)，用于日期显示和处理
-  keywords: # SEO 关键词
+  title: Zetsukae Blog # Site name
+  alternate: zetsukae # Alternate English name used in footer/logo/handle
+  subtitle: Made it by Yourself. You can. Despite everything. # Tagline
+  name: Zetsukae # Author name
+  description: A modern Astro blog theme and personal website # Site description
+  avatar: /img/avatar.webp # Profile avatar
+  showLogo: true # Show logo
+  author: Zetsukae # Author name
+  url: https://zetsukae.com # Site URL used for RSS and SEO
+  defaultOgImage: /img/avatar.webp # Default Open Graph image
+  startYear: 2020 # Site start year
+  timezone: Europe/Zurich # IANA timezone used for date display
+  keywords: # SEO keywords
     - Blog
     - Astro
-    - Technologie
+    - Technology
     - Front-end
-    # 请根据你的网站内容添加关键词
+    - Personal website
   # breadcrumbHome: 首页  # 面包屑导航中首页的显示名称（默认: '首页'）
 
 # =============================================================================
@@ -41,31 +41,22 @@ site:
 #   - label: 语言显示名称（如 '中文', 'English'）
 # -----------------------------------------------------------------------------
 i18n:
-  defaultLocale: fr
+  defaultLocale: en
   locales:
-    - code: fr
-      label: Français
-    - code: zh
-      label: 中文
-      enabled: false
     - code: en
       label: English
-      # enabled: false  # 内容存在但暂时禁用（保留内容但不生成路由）
-    - code: ja
-      label: 日本語
 
 # =============================================================================
 # Category Map
-# Maps French category names to URL-friendly English slugs
-# Example: 'Annonces' category URL becomes /categories/life
+# Maps category names to URL-friendly English slugs
 # =============================================================================
 categoryMap:
   # Primary categories
-  Annonces: life
+  Announcements: life
   Notes: note
-  Outils: tools
+  Tools: tools
   # Secondary categories (for nested paths)
-  Jeux: front-end
+  Games: front-end
   # Add more as needed:
   # 书摘: reading
   # 后端: back-end
@@ -83,22 +74,22 @@ categoryMap:
 #   description: 分类描述文字，显示在卡片上
 # -----------------------------------------------------------------------------
 featuredCategories:
-  - link: life # corresponds to Annonces category
-    label: Annonces
+  - link: life
+    label: Announcements
     image: /img/cover/2.webp
-    description: Toutes les annonces utiles!
-  - link: note # corresponds to Notes category
-    label: Notes
+    description: All useful announcements!
+  - link: note
+    label: Tutorials
     image: /img/cover/4.webp
-    description: Notes techniques et d'apprentissage
-  - link: note/front-end # nested category: Notes/Games
-    label: Mes-Jeux
+    description: Technical tutorials and how-to guides
+  - link: note/front-end
+    label: My Games
     image: /img/cover/1.webp
-    description: Ici vous trouverez tous les jeux que j'ai créé
-  - link: tools # corresponds to Tools category
-    label: Outils
+    description: Here you will find all the games I created
+  - link: tools
+    label: Tools
     image: /img/cover/11.webp
-    description: Utilisation d'outils et amélioration de la productivité
+    description: Tool usage and productivity improvement
 
 # =============================================================================
 # Featured Series
@@ -118,20 +109,20 @@ featuredCategories:
 #   links: 相关链接配置（可选）
 # -----------------------------------------------------------------------------
 featuredSeries:
-  - slug: weekly # URL 路径: /weekly
-    categoryName: 周刊 # 必须与 categoryMap 中的分类名匹配
-    label: 我的周刊 # 简短名称
-    fullName: 我的技术周刊 # 完整名称
-    description: | # 支持多行 Markdown
-      这是周刊/系列文章功能的示例配置。
-      你可以用它来发布定期更新的系列内容，如技术周刊、读书笔记系列等。
-      设置 enabled: false 可以关闭此功能。
-    cover: /img/weekly_header.webp # 系列页面头图
-    enabled: false # Disabled for French setup
-    icon: ri:newspaper-line # 导航图标
-    links: # 相关链接（可选）
-      github: https://github.com/Zetsukae/zetsukae.com # (可选) GitHub 仓库
-      rss: /rss.xml # (可选) RSS 订阅链接
+  - slug: weekly
+    categoryName: Notes
+    label: Weekly
+    fullName: My Weekly
+    description: |
+      This is an example of the weekly/series feature.
+      You can use it to publish regular updates such as technical roundups or reading notes.
+      Set enabled: false to disable this feature.
+    cover: /img/weekly_header.webp
+    enabled: false
+    icon: ri:newspaper-line
+    links:
+      github: https://github.com/Zetsukae/zetsukae.com
+      rss: /rss.xml
       # chrome: https://chromewebstore.google.com/detail/your-extension-id # (可选) 浏览器插件
       # docs: https://your-docs-url # (可选) 文档链接
   # 示例：添加第二个系列（取消注释启用）
@@ -209,28 +200,28 @@ social:
 # -----------------------------------------------------------------------------
 friends:
   intro:
-    title: 友情链接 # 页面标题
-    subtitle: 欢迎交换友链！ # 页面副标题
-    applyTitle: 申请友链 # 申请区块标题
-    applyDesc: 请在本页留言，格式如下 # 申请说明
-    exampleYaml: | # 申请格式示例，会显示在页面上
-      - site: 你的博客名称 # 站点名称
-        url: https://your-blog.com/ # 站点网址
-        owner: 你的昵称 # 昵称
-        desc: 站点简介 # 站点简介
-        image: https://your-blog.com/avatar.jpg # 头像链接
-        color: "#ffc0cb" # 主题色（可选）
-  data: # 友链列表
+    title: Friends
+    subtitle: Feel free to exchange links!
+    applyTitle: Apply for a link
+    applyDesc: Please leave a comment on this page in the following format
+    exampleYaml: |
+      - site: Your blog name
+        url: https://your-blog.com/
+        owner: Your nickname
+        desc: Short description
+        image: https://your-blog.com/avatar.jpg
+        color: "#ffc0cb"
+  data:
     - site: zetsukae.com
       url: https://zetsukae.com
       owner: Zetsukae
-      desc: C'EST MOI
+      desc: It's me
       image: /img/avatar.webp
       color: '#8B5CF6'
     - site: PendaXL Youtube
       url: https://www.youtube.com/@sunmayxl
       owner: PendaXL
-      desc: YOO ta la pêche?!
+      desc: Nice to meet you!
       image: /img/pendaxl.webp
       color: '#FF6B6B'
 
@@ -353,41 +344,39 @@ content:
 #   - Remix Icon: https://icon-sets.iconify.design/ri/
 # -----------------------------------------------------------------------------
 navigation:
-  - name: 首页 # 菜单显示名称（nameKey 不存在时的回退文本）
-    nameKey: nav.home # i18n 翻译 key
-    path: / # 链接路径
-    icon: ri:home-heart-fill # 图标
-  # - name: 书摘
-  #   path: /reading
-  - name: 周刊
+  - name: Home
+    nameKey: nav.home
+    path: /
+    icon: ri:home-heart-fill
+  - name: Weekly
     nameKey: nav.weekly
     path: /weekly
     icon: ri:newspaper-line
-  - name: 文章 # 有子菜单时，path 可省略
+  - name: Posts
     nameKey: nav.posts
     icon: ri:quill-pen-ai-fill
-    children: # 子菜单列表
-      - name: 分类
+    children:
+      - name: Categories
         nameKey: nav.categories
         path: /categories
         icon: ri:grid-fill
-      - name: 标签
+      - name: Tags
         nameKey: nav.tags
         path: /tags
         icon: fa6-solid:tags
-      - name: 归档
+      - name: Archives
         nameKey: nav.archives
         path: /archives
         icon: ri:archive-2-fill
-  - name: 友链
+  - name: Friends
     nameKey: nav.friends
     path: /friends
     icon: ri:links-line
-  - name: 关于
+  - name: About
     nameKey: nav.about
     path: /about
     icon: fa6-regular:circle-user
-  - name: 歌单
+  - name: Music
     nameKey: nav.music
     #path: /music
     icon: ri:music-2-fill

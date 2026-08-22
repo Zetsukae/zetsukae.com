@@ -13,7 +13,7 @@ import { openModal } from '@store/modal';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
 function getFontConfig(locale: string) {
-  const fontFamily = locale === 'ja' ? 'Gen Jyuu Gothic P' : '寒蝉全圆体';
+  const fontFamily = locale === 'en' ? 'ChillRoundF' : '寒蝉全圆体';
   return `
 theme
   base

@@ -1,21 +1,14 @@
 /**
  * Translation dictionaries barrel export
  *
- * Each locale maps to its UI string dictionary.
- * The default locale (zh) provides the complete set of keys;
- * other locales can be partial and will fall back to zh.
+ * The site is English-only by default, so the English dictionary is the canonical
+ * source for UI strings. Other locale files can be reintroduced later if needed.
  */
 
 import type { DefaultUIStrings, UIStrings } from '../types';
 import { uiStrings as en } from './en';
-import { uiStrings as fr } from './fr';
-import { uiStrings as ja } from './ja';
-import { uiStrings as zh } from './zh';
 
 /** All translation dictionaries indexed by locale code */
 export const translations: Record<string, DefaultUIStrings | UIStrings> = {
-  zh,
   en,
-  fr,
-  ja,
 };
