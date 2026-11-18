@@ -1,0 +1,47 @@
+---
+import ButtonLink from '@components/control/ButtonLink.astro';
+import HomeSider from '@components/layout/HomeSider.astro';
+import Cover from '@components/ui/cover/Cover.astro';
+import { CONTENT_PADDING } from '@constants/layout';
+import { siteConfig } from '@constants/site-config';
+import Layout from '@layouts/Layout.astro';
+import TwoColumnLayout from '@layouts/TwoColumnLayout.astro';
+
+const title = 'Underfang: Prologue';
+---
+
+<Layout title={`${title} | ${siteConfig.title}`} description={title}>
+  <TwoColumnLayout>
+    <Cover slot="cover" title={title} />
+    <HomeSider slot="sider" />
+    <div
+      class:list={[
+        'shadow-box bg-gradient-start flex w-full flex-col items-center justify-center gap-5 sm:flex-row',
+        CONTENT_PADDING.standard,
+      ]}
+    >
+      <ButtonLink
+        url="https://store.steampowered.com/app/4779490/Underfang/"
+        label="Steam Wishlist"
+        variant="gradient-shoka"
+        size="lg"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-full sm:w-auto"
+      >
+        Steam Wishlist
+      </ButtonLink>
+      <ButtonLink
+        url="https://forms.gle/TSR1vmT4h915QkgQ8"
+        label="Request for BETA TEST"
+        variant="outline"
+        size="lg"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-full sm:w-auto"
+      >
+        Request for BETA TEST
+      </ButtonLink>
+    </div>
+  </TwoColumnLayout>
+</Layout>
